@@ -16,15 +16,8 @@ func main() {
 	app.GET("/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "success",
+			"info":    "etc",
 		})
 	})
 	app.Run(fmt.Sprintf(":%s", port))
-}
-
-func mainHandler(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"message": "success",
-		"info":    "etc",
-		"etc":     "etc",
-	})
 }
