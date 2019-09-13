@@ -25,5 +25,6 @@ func mainHandler(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"message": "success",
 		"info":    "etc",
+		"etc":     "etc",
 	})
 }
